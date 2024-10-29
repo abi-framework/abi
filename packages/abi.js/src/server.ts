@@ -47,7 +47,7 @@ export class Server {
   }
 
   error<T>(err: T): Response {
-    console.log(`Unexpected server error: ${err}`);
+    console.error(`Unexpected server error: ${err}`);
 
     return new Response('Error 500: Server error.', {
       status: 500,
