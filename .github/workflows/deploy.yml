@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         operating-system: [ubuntu-latest]
-        bun-version: [1.1.29]
+        bun-version: [1.1.34]
 
     name: 📦️ Build the frontend on ${{ matrix.operating-system }} using Bun@${{ matrix.bun-version }}
 
@@ -63,7 +63,7 @@ jobs:
     strategy:
       matrix:
         operating-system: [ubuntu-latest]
-        deno-version: [1.45.5]
+        deno-version: [2.0.5]
 
     name: 🚀 Deploy abi.deno.dev to ${{ matrix.operating-system }} on Deno-${{ matrix.deno-version }}
 
