@@ -18,9 +18,7 @@ await build({
   minify: false,
   entryPoints: ['./dist/deno/mod.ts'],
   outDir,
-  shims: {
-    deno: true,
-  },
+  shims: false,
   package: pkg,
   async postBuild() {
     for await (const entryPoint of Deno.readDir(`${outDir}/esm/src`)) {

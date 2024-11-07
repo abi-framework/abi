@@ -76,7 +76,6 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@deno/shim-deno": "^0.19.2",
     "buno.js": "^0.1.11",
     "reflect-metadata": "^0.2.2"
   }

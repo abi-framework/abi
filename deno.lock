@@ -23,7 +23,6 @@
     "jsr:@std/path@~0.225.2": "0.225.2",
     "jsr:@ts-morph/bootstrap@0.24": "0.24.0",
     "jsr:@ts-morph/common@0.24": "0.24.0",
-    "npm:@deno/shim-deno@~0.19.2": "0.19.2",
     "npm:buno.js@0.1.11": "0.1.11",
     "npm:buno.js@~0.1.11": "0.1.11",
     "npm:globby@^14.0.2": "14.0.2",
@@ -124,16 +123,6 @@
     }
   },
   "npm": {
-    "@deno/shim-deno-test@0.5.0": {
-      "integrity": "sha512-4nMhecpGlPi0cSzT67L+Tm+GOJqvuk8gqHBziqcUQOarnuIax1z96/gJHCSIz2Z0zhxE6Rzwb3IZXPtFh51j+w=="
-    },
-    "@deno/shim-deno@0.19.2": {
-      "integrity": "sha512-q3VTHl44ad8T2Tw2SpeAvghdGOjlnLPDNO2cpOxwMrBE/PVas6geWpbpIgrM+czOCH0yejp0yi8OaTuB+NU40Q==",
-      "dependencies": [
-        "@deno/shim-deno-test",
-        "which@4.0.0"
-      ]
-    },
     "@emnapi/runtime@1.2.0": {
       "integrity": "sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==",
       "dependencies": [
@@ -322,7 +311,7 @@
       "dependencies": [
         "path-key",
         "shebang-command",
-        "which@2.0.2"
+        "which"
       ]
     },
     "detect-libc@2.0.3": {
@@ -417,9 +406,6 @@
     },
     "isexe@2.0.0": {
       "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
-    },
-    "isexe@3.1.1": {
-      "integrity": "sha512-LpB/54B+/2J5hqQ7imZHfdU31OlgQqx7ZicVlkm9kzg9/w8GKLEcFfJl/t7DCEDueOyBAD6zCCwTO6Fzs0NoEQ=="
     },
     "jackspeak@4.0.1": {
       "integrity": "sha512-cub8rahkh0Q/bw1+GxP7aeSe29hHHn2V4m29nnDlvCdlgU+3UGxkZp7Z53jLUdpX3jdTO0nJZUDl3xvbWc2Xog==",
@@ -585,13 +571,7 @@
     "which@2.0.2": {
       "integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
       "dependencies": [
-        "isexe@2.0.0"
-      ]
-    },
-    "which@4.0.0": {
-      "integrity": "sha512-GlaYyEb07DPxYCKhKzplCWBJtvxZcZMrL+4UkrTSJHHPyZU4mYYTv3qaOe77H7EODLSSopAUFAc6W8U4yqvscg==",
-      "dependencies": [
-        "isexe@3.1.1"
+        "isexe"
       ]
     },
     "wrap-ansi@7.0.0": {
@@ -625,7 +605,6 @@
         ],
         "packageJson": {
           "dependencies": [
-            "npm:@deno/shim-deno@~0.19.2",
             "npm:@types/bun@^1.1.13",
             "npm:@types/node@^22.9.0",
             "npm:buno.js@~0.1.11",
