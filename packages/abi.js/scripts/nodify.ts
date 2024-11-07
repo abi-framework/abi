@@ -20,14 +20,14 @@ await build({
   shims: false,
   package: pkg,
   async postBuild() {
-    for await (const entryPoint of Deno.readDir(`${outDir}/esm/src`)) {
+    for await (const entryPoint of Deno.readDir(`${outDir}/src`)) {
       await Deno.rename(
-        `${outDir}/esm/src/${entryPoint.name}`,
+        `${outDir}/src/${entryPoint.name}`,
         `${distDir}/${entryPoint.name}`,
       );
       console.log(
         '\x1b[32m',
-        `🚚 ${outDir}/esm/${entryPoint.name} -> ${distDir}/${entryPoint.name}`,
+        `🚚 ${outDir}/src/${entryPoint.name} -> ${distDir}/${entryPoint.name}`,
       );
     }
     await emptyDir(outDir);
