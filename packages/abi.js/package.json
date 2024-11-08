@@ -67,8 +67,6 @@
     "denoify": "denoify"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.13",
-    "@types/node": "^22.9.0",
     "denoify": "^1.6.16",
     "esbuild": "^0.24.0",
     "globby": "^14.0.2",
@@ -76,6 +74,8 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
+    "@types/bun": "^1.1.13",
+    "@types/node": "^22.9.0",
     "buno.js": "^0.1.11",
     "reflect-metadata": "^0.2.2"
   }
