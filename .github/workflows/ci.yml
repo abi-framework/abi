@@ -40,6 +40,12 @@ jobs:
       - name: ⚡️ Install dependencies
         run: pnpm install -r
 
+      - name: 📂 Upload node_modules directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: node_modules
+          path: packages/abi.js/node_modules
+
       - name: ✅ Check code style
         run: pnpm check
 

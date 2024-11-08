@@ -43,6 +43,14 @@ jobs:
         with:
           deno-version: ${{ matrix.deno-version }}
 
+      - name: 📦️ Download node_modules directory
+        uses: actions/download-artifact@v4
+        with:
+          name: node_modules
+          path: packages/abi.js/node_modules
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: 📦️ Download Deno distribution files
         uses: actions/download-artifact@v4
         with:
