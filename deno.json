@@ -1,5 +1,6 @@
 {
   "workspace": ["./packages/abi.js", "./www/apps/backend"],
+  "nodeModulesDir": "auto",
   "compilerOptions": {
     "lib": [
       "esnext",
