@@ -1,6 +1,7 @@
 {
   "name": "@abi-js/abi",
   "version": "0.1.2",
+  "nodeModulesDir": "auto",
   "exports": {
     ".": "./dist/deno/index.ts"
   },
